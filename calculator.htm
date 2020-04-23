@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<body>
+<h2>calculator by vishal</h2>
+<script type="text/javascript">
+function calAdd(Firstnumber,Secondnumber)
+{
+ var a=parseInt(Firstnumber);
+var b=parseInt(Secondnumber);
+var c=a+b;
+alert("Result="+c);
+}
+function calSub(Firstnumber,Secondnumber)
+{
+ var a=parseInt(Firstnumber);
+ var b=parseInt(Secondnumber);
+ var c=a-b;
+ alert("Result="+c);
+}
+function calMul(Firstnumber,Secondnumber)
+{
+ var a=parseInt(Firstnumber);
+ var b=parseInt(Secondnumber);
+ var c=a*b;
+ alert("Result="+c);
+}
+function calDiv(Firstnumber,Secondnumber)
+{
+ var a=parseInt(Firstnumber);
+ var b=parseInt(Secondnumber);
+ var c=a/b;
+ alert("Result="+c);
+}
+</script>
+<form>
+<table border="1">
+<tr>
+<td>first number:</td>
+<td><input id="txtFirstnumber"type="text"/></td>
+</tr>
+<tr>
+<td>second number</td>
+<td><input id="txtSecondnumber"type="text"/></td>
+</tr>
+<tr>
+<td><input type="button"value="ADD" 
+onClick="calAdd(txtFirstnumber.value,txtSecondnumber.value);"/>&nbsp;
+<input type="button"value="SUB"
+onClick="calSub(txtFirstnumber.value,txtSecondnumber.value);"/></td>
+<td><input type="button"value="MUL"
+onClick="calMul(txtFirstnumber.value,txtSecondnumber.value);"/>&nbsp;
+<input type="button"value="DIV"
+onClick="calDiv(txtFirstnumber.value,txtSecondnumber.value);"/>
+<input id="btnReset"type="reset"/></td>
+</tr>
+</table>
+</form>
+</body>
+</html>
